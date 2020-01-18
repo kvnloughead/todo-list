@@ -1,5 +1,18 @@
 
-// Check off todos on click
-$('.todo-item').on('click', function(){
-    $(this).toggleClass('done');
-})
+checkOffTodo()
+trashTodo()
+
+function checkOffTodo(){
+    $('.todo-item').on('click', function(){
+        $(this).toggleClass('done');
+    })
+}
+
+function trashTodo(){
+    $(".trash").on('click', function(event){
+        $(this).parent().fadeOut(function(){
+            $(this).remove();
+        });
+    });
+}
+
