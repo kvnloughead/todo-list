@@ -7,3 +7,4 @@
 5. Basic functionality complete.
     - Added ability to add new todos
     - Ensured that `checkOff` and `trash` listeners apply to all future todo items.
+6. Mostly styling.
