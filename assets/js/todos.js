@@ -23,8 +23,17 @@ function newTodo(){
         if (event.which === 13){
             var todo = $(this).val()
             $(this).val("");
-            $('ul').append("<li><span>X</span> " + todo + "</li>");
-        };
-                 
+            $('ul').append("<li><span class='trash'><i class='fas fa-trash-alt'></i> </span>" + todo + "</li>");
+        };               
     })
 }
+
+function toggleInput(){
+    $('.toggle').click(function(){
+        $('input[type="text"]').fadeToggle();
+    })
+}
+
+toggleInput()
+
+
